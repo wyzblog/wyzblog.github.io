@@ -219,7 +219,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/12/24/123123/" class="post-title-link" itemprop="url">123123</a>
+            <a href="/2020/12/24/123123/" class="post-title-link" itemprop="url">bbr+ssr+bt面板的安装</a>
         </h2>
 
         <div class="post-meta">
@@ -231,6 +231,13 @@
 
               <time title="创建时间：2020-12-24 02:51:28" itemprop="dateCreated datePublished" datetime="2020-12-24T02:51:28+08:00">2020-12-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-26 03:51:35" itemprop="dateModified" datetime="2020-12-26T03:51:35+08:00">2020-12-26</time>
+              </span>
 
           
 
@@ -243,7 +250,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <p>近期服务器总是被墙，每周都要开两次以上新服，记录一下代码吧。<br><a target="_blank" rel="noopener" href="https://i.loli.net/2018/12/10/5c0e01420c42e.jpg">  </a></p>
+<h1 id="安装BBR"><a href="#安装BBR" class="headerlink" title="安装BBR"></a>安装BBR</h1><h2 id="google原生BBR"><a href="#google原生BBR" class="headerlink" title="google原生BBR"></a>google原生BBR</h2><blockquote>
+<p>wget –no-check-certificate <a target="_blank" rel="noopener" href="https://github.com/teddysun/across/raw/master/bbr.sh">https://github.com/teddysun/across/raw/master/bbr.sh</a> &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh</p>
+</blockquote>
+<p>验证</p>
+<blockquote>
+<p> lsmod | grep bbr</p>
+</blockquote>
+<h1 id="nanqinlang"><a href="#nanqinlang" class="headerlink" title="nanqinlang"></a>nanqinlang</h1><blockquote>
+<p>wget -N –no-check-certificate “<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;">https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;</a> &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh</p>
+</blockquote>
+<p>验证</p>
+<blockquote>
+<p>lsmod | grep nanqinlang</p>
+</blockquote>
+<h1 id="bt面板"><a href="#bt面板" class="headerlink" title="bt面板"></a>bt面板</h1><blockquote>
+<p>yum install -y wget &amp;&amp; wget -O install.sh <a target="_blank" rel="noopener" href="http://download.bt.cn/install/install_6.0.sh">http://download.bt.cn/install/install_6.0.sh</a> &amp;&amp; sh install.sh</p>
+</blockquote>
+<h1 id="ssr"><a href="#ssr" class="headerlink" title="ssr"></a>ssr</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;teddysun&#x2F;shadowsocks_install&#x2F;master&#x2F;shadowsocks-all.sh</span><br><span class="line">chmod +x shadowsocks-all.sh</span><br><span class="line">.&#x2F;shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
